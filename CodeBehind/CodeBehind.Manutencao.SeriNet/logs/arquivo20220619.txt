@@ -1,0 +1,13 @@
+2022-06-19 22:31:29.979 -03:00 [INF] Now listening on: http://localhost:5072
+2022-06-19 22:31:30.059 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-19 22:31:30.060 -03:00 [INF] Hosting environment: Development
+2022-06-19 22:31:30.061 -03:00 [INF] Content root path: C:\GIT\manutencao\CodeBehind\CodeBehind.Manutencao.SeriNet\
+2022-06-19 22:31:30.257 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/usuario - -
+2022-06-19 22:31:30.321 -03:00 [INF] Executing endpoint 'CodeBehind.Manutencao.SeriNet.Controllers.UsuarioController.Get (CodeBehind.Manutencao.SeriNet)'
+2022-06-19 22:31:30.370 -03:00 [INF] Route matched with {action = "Get", controller = "Usuario"}. Executing controller action with signature CodeBehind.Manutencao.SeriNet.UsuarioVM Get() on controller CodeBehind.Manutencao.SeriNet.Controllers.UsuarioController (CodeBehind.Manutencao.SeriNet).
+2022-06-19 22:31:30.374 -03:00 [INF] Rastreio - Entrou no Get
+2022-06-19 22:31:30.412 -03:00 [ERR] Input string was not in a correct format.
+2022-06-19 22:31:30.420 -03:00 [INF] Executing ObjectResult, writing value of type 'CodeBehind.Manutencao.SeriNet.UsuarioVM'.
+2022-06-19 22:31:30.451 -03:00 [INF] Executed action CodeBehind.Manutencao.SeriNet.Controllers.UsuarioController.Get (CodeBehind.Manutencao.SeriNet) in 74.659ms
+2022-06-19 22:31:30.454 -03:00 [INF] Executed endpoint 'CodeBehind.Manutencao.SeriNet.Controllers.UsuarioController.Get (CodeBehind.Manutencao.SeriNet)'
+2022-06-19 22:31:30.459 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/usuario - - - 200 - application/json;+charset=utf-8 205.5990ms
