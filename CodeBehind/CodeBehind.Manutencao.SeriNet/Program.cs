@@ -1,3 +1,5 @@
+//***CODE BEHIND - BY RODOLFO.FONSECA***//
+
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,9 @@ var logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("logs/arquivo.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
+
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
 
 //Provided Sinks
 //https://github.com/serilog/serilog/wiki/Provided-Sinks

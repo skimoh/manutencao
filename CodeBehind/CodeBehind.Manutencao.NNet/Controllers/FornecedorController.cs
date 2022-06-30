@@ -1,3 +1,4 @@
+//***CODE BEHIND - BY RODOLFO.FONSECA***//
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodeBehind.Manutencao.NNet.Controllers
@@ -7,7 +8,6 @@ namespace CodeBehind.Manutencao.NNet.Controllers
     public class FornecedorController : ControllerBase
     {
        
-
         private readonly ILogger<FornecedorController> _logger;
 
         public FornecedorController(ILogger<FornecedorController> logger)
@@ -18,7 +18,7 @@ namespace CodeBehind.Manutencao.NNet.Controllers
         [HttpGet]
         public FornecedorVM Get()
         {
-            var usuario = new FornecedorVM();
+            var fornecedor = new FornecedorVM();
             try
             {
                 _logger.LogInformation("Rastreio - Entrou no Get");
@@ -30,7 +30,7 @@ namespace CodeBehind.Manutencao.NNet.Controllers
                 _logger.LogError(ex.Message, "ERRO");
             }
 
-            return usuario;
+            return fornecedor;
         }
     }
 }
